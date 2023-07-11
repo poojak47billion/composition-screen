@@ -10,6 +10,7 @@ interface MessageData {
   arguments?: any[];
   callId?: string;
   result?: any;
+  notes?: any;
 }
 
 const RevealNotes = (): void => {
@@ -100,7 +101,7 @@ const RevealNotes = (): void => {
 
     function post(event?: Event): void {
       const slideElement = Reveal.getCurrentSlide();
-      const notesElement = slideElement?.querySelector("aside.notes");
+      let notesElement = slideElement?.querySelector("aside.notes");
       const fragmentElement = slideElement?.querySelector(".current-fragment");
 
       const messageData: MessageData = {
