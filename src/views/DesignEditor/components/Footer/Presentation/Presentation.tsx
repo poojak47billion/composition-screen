@@ -12,7 +12,7 @@ const Presentation = () => {
   return (
     <Container>
       <Scenes />
-      {/* <Common /> */}
+      <Common />
     </Container>
   );
 };

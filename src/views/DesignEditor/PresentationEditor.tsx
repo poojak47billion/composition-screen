@@ -14,8 +14,8 @@ const PresentationEditor = () => {
         <Panels />
         <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
           <Toolbox />
-          <RevealSlides />
-          {/* <Canvas /> */}
+          {/* <RevealSlides /> */}
+          <Canvas />
           <Footer />
         </div>
       </div>
